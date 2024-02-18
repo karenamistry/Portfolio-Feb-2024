@@ -16,7 +16,11 @@ function EmailCopyButton() {
 
   return (
     <div className="relative w-full">
-      <button onClick={copyEmailToClipboard} className="uppercase text-xs">
+      <button
+        title="k.mistry1898@gmail.com"
+        onClick={copyEmailToClipboard}
+        className="uppercase text-xs"
+      >
         Copy Email
       </button>
       {isCopied && (
