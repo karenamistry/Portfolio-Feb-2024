@@ -6,14 +6,14 @@ function Cases() {
   return (
     <div>
       <h2 className="text-sm uppercase">Cases</h2>
-      <ul className="text-xs text-blue-600 underline ">
+      <ul className="text-xs text-[#0000ed] underline ">
         <li>
           <NavLink
             className={({ isActive }) =>
               `nav-link ${
                 isActive
-                  ? "text-blue-800 underline"
-                  : "text-blue-600 underline "
+                  ? "text-[#0000ed] underline"
+                  : "text-[#0000ed] underline "
               }`
             }
             to="/cases/supernaone"
@@ -26,8 +26,8 @@ function Cases() {
             className={({ isActive }) =>
               `nav-link ${
                 isActive
-                  ? "text-blue-800 underline"
-                  : "text-blue-600 underline "
+                  ? "text-[#0000ed] underline"
+                  : "text-[#0000ed] underline "
               }`
             }
             to="/cases/supernarwd"
@@ -40,8 +40,8 @@ function Cases() {
             className={({ isActive }) =>
               `nav-link ${
                 isActive
-                  ? "text-blue-800 underline"
-                  : "text-blue-600 underline "
+                  ? "text-[#0000ed] underline"
+                  : "text-[#0000ed] underline "
               }`
             }
             to="/cases/supernagc"
@@ -54,8 +54,8 @@ function Cases() {
             className={({ isActive }) =>
               `nav-link ${
                 isActive
-                  ? "text-blue-800 underline"
-                  : "text-blue-600 underline "
+                  ? "text-[#0000ed] underline"
+                  : "text-[#0000ed] underline "
               }`
             }
             to="/cases/expedite"
@@ -68,8 +68,8 @@ function Cases() {
             className={({ isActive }) =>
               `nav-link ${
                 isActive
-                  ? "text-blue-800 underline"
-                  : "text-blue-600 underline "
+                  ? "text-[#0000ed] underline"
+                  : "text-[#0000ed] underline "
               }`
             }
             to="/cases/beacons"
@@ -82,8 +82,8 @@ function Cases() {
             className={({ isActive }) =>
               `nav-link ${
                 isActive
-                  ? "text-blue-800 underline"
-                  : "text-blue-600 underline "
+                  ? "text-[#0000ed] underline"
+                  : "text-[#0000ed] underline "
               }`
             }
             to="/cases/stocate"

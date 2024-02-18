@@ -8,8 +8,18 @@ const Stocate = () => {
 
   return (
     <div>
-      <button onClick={() => navigate(-1)} className="fixed top-4 ">
-        <ReplyIcon style={{ color: "black", marginRight: "4px" }} />
+      <button
+        onClick={() => navigate(-1)}
+        className="fixed top-4 text-xs bg-black text-white px-1"
+      >
+        <ReplyIcon
+          style={{
+            color: "white",
+            marginRight: "2px",
+            marginBottom: "3px",
+            fontSize: "16px",
+          }}
+        />
         Back
       </button>
       <div className="mt-8">
