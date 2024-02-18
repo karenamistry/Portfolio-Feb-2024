@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["monospace"],
+        geist: ['"Geist Mono"', "monospace"],
+      },
+      fontSize: {
+        xs: "0.8125rem", // Override the default size
       },
     },
     plugins: [],

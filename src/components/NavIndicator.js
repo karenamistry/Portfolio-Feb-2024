@@ -11,7 +11,7 @@ function NavIndicator(props) {
         className={function ({ isActive }) {
           return `flex items-center gap-2  ${
             isActive
-              ? 'before:content-[""] before:block before:w-3 before:h-3 before:bg-black before:rounded-full'
+              ? 'before:content-[""] before:block before:w-2 before:h-2 before:bg-black before:rounded-full'
               : ""
           }`;
         }}

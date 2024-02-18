@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hiding Scrollbar */
+
 @layer utilities {
   .hide-scrollbar {
     @apply overflow-auto;
@@ -11,4 +13,20 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+}
+
+/* Importing Giest Mono */
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("./font/GeistMono-Regular.woff2") format("woff2"),
+    url("./font/GeistMono-Regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Visited Links  */
+
+.nav-link:visited {
+  color: rgb(85, 26, 139);
 }

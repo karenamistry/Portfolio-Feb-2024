@@ -1,25 +1,35 @@
 import React, { useState, useEffect } from "react";
 
-const CurrentTimeEST = () => {
-  const [time, setTime] = useState("");
+function CurrentTimeEST() {
+  const [time, setTime] = useState(new Date());
+  const [is24Hour, setIs24Hour] = useState(false);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const eastern =
-        new Intl.DateTimeFormat("en-US", {
-          timeZone: "America/New_York",
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: true,
-        }).format(new Date()) + " EST"; // Append 'EST' to the formatted string
-
-      setTime(eastern);
-    }, 1000); // Update time every second
-
-    return () => clearInterval(interval);
+  useEffect(function () {
+    const intervalId = setInterval(function () {
+      setTime(new Date());
+    }, 1000);
+    return function cleanup() {
+      clearInterval(intervalId);
+    };
   }, []);
 
-  return <div>{time}</div>;
-};
+  function toggleFormat() {
+    setIs24Hour(!is24Hour);
+  }
+
+  const timeFormat = is24Hour ? "HH:mm" : "hh:mm A";
+  const estTime = time.toLocaleTimeString("en-US", {
+    timeZone: "America/New_York",
+    hour12: !is24Hour,
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
+  return (
+    <div onClick={toggleFormat} style={{ cursor: "pointer" }}>
+      {estTime}
+    </div>
+  );
+}
 
 export default CurrentTimeEST;

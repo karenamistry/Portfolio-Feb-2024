@@ -16,12 +16,12 @@ function EmailCopyButton() {
 
   return (
     <div className="relative w-full">
-      <button onClick={copyEmailToClipboard} className="uppercase text-base">
+      <button onClick={copyEmailToClipboard} className="uppercase text-xs">
         Copy Email
       </button>
       {isCopied && (
-        <div className="absolute bottom-auto -translate-y-full bg-white text-yellow-500 text-base h-full uppercase">
-          ⭐ Copied to clipboard
+        <div className="absolute top-[23px] -translate-y-full bg-white text-black text-xs uppercase">
+          Copied to clipboard
         </div>
       )}
     </div>
