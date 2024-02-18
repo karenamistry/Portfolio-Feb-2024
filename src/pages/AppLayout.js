@@ -5,6 +5,7 @@ import NavIndicator from "../components/NavIndicator"; // Component for active n
 import EmailCopyButton from "../components/EmailCopyButton";
 import { NavLink } from "react-router-dom";
 import WeatherWidget from "../components/WeatherWidget";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const AppLayout = ({ children }) => {
   return (
@@ -63,6 +64,7 @@ const AppLayout = ({ children }) => {
           </a>
         </div>
       </div>
+      <SpeedInsights />
       {/* End */}
     </div>
   );
