@@ -1,4 +1,3 @@
-// Example for a case study page, e.g., SupernaOne.js
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ReplyIcon from "@mui/icons-material/Reply";
