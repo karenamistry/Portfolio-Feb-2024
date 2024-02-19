@@ -1,7 +1,7 @@
 // src/components/AppLayout.js
 import React from "react";
 import CurrentTimeEST from "../components/Time";
-import NavIndicator from "../components/NavIndicator"; // Component for active nav item indicator
+import NavIndicator from "../components/NavIndicator";
 import EmailCopyButton from "../components/EmailCopyButton";
 import { NavLink } from "react-router-dom";
 import WeatherWidget from "../components/WeatherWidget";
@@ -13,13 +13,13 @@ const AppLayout = ({ children }) => {
       {/* Titles section 1 */}
       <aside className="w-1/3">
         <div className="flex flex-col items-start space-y-3">
-          <div className="flex flex-col items-start text-base uppercase">
+          <div className="flex flex-col items-start header">
             <NavLink to="/">
               <div>Karena Mistry</div>
               <div>Product Designer</div>
             </NavLink>
           </div>
-          <div className="flex flex-col items-start text-xs">
+          <div className="flex flex-col items-start body">
             <div>Based in Canada</div>
             <div>
               <CurrentTimeEST />
@@ -28,8 +28,8 @@ const AppLayout = ({ children }) => {
               <WeatherWidget />
             </div>
           </div>
-          <div className="flex flex-col items-start text-xs">
-            <div>© 2024</div>
+          <div className="flex flex-col items-start body">
+            <div title="Design & dev by Karena">© 2024</div>
           </div>
         </div>
       </aside>
@@ -40,14 +40,14 @@ const AppLayout = ({ children }) => {
       </main>
 
       {/* Navigation 3 */}
-      <div className="flex flex-col space-y-12 w-1/3">
+      <div className="flex flex-col space-y-8 w-1/3">
         {/* List */}
         <nav className="">
-          <ul className="flex flex-col space-y-1 text-xs">
+          <ul className="flex flex-col space-y-1 body">
             <NavIndicator to="/" label="All" />
             <NavIndicator to="/cases" label="Case Studies" />
-            <NavIndicator to="/projects" label="Side Projects" />
-            <NavIndicator to="/info" label="Info" />
+            {/* <NavIndicator to="/projects" label="Side Projects" /> */}
+            {/* <NavIndicator to="/info" label="Info" /> */}
           </ul>
         </nav>
 
@@ -58,7 +58,7 @@ const AppLayout = ({ children }) => {
             href="https://read.cv/karena"
             target="_blank"
             rel="noopener noreferrer"
-            className="uppercase text-xs"
+            className="subheader"
           >
             Read.CV
           </a>

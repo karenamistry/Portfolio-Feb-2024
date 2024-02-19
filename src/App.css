@@ -2,32 +2,16 @@
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
-/* Hide scrollbar for IE, Edge, and Firefox */
+/* Hide scrollbar for Ie, Edge and Firefox */
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+/* 1px line at bottom -___- */
 
 html,
 body {
   height: 100%;
   margin: 0;
-  background-color: black;
-}
-
-/* In your CSS file */
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.animate-slide-in {
-  animation: slideInFromLeft 0.5s ease forwards;
 }

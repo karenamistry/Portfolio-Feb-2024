@@ -27,7 +27,6 @@ root.render(
           <Route path="/" element={<All />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/info" element={<Info />} />
-
           <Route path="/cases" element={<Cases />} />
           <Route path="/cases/supernaone" element={<SupernaOne />} />
           <Route path="/cases/supernarwd" element={<SupernaRWD />} />

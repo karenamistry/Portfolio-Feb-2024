@@ -24,7 +24,7 @@ function EmailCopyButton() {
         Copy Email
       </button>
       {isCopied && (
-        <div className="absolute top-[23px] -translate-y-full bg-white text-black text-xs uppercase">
+        <div className="absolute top-[23px] -translate-y-full bg-white subheader">
           Copied to clipboard
         </div>
       )}

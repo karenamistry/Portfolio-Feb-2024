@@ -30,3 +30,15 @@
 .nav-link:visited {
   color: rgb(85, 26, 139);
 }
+
+/* Text Styles */
+
+.header {
+  @apply text-base uppercase;
+}
+.subheader {
+  @apply text-xs uppercase;
+}
+.body {
+  @apply text-xs;
+}

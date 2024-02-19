@@ -5,8 +5,12 @@ import "../../src/index.css";
 function Cases() {
   return (
     <div>
-      <h2 className="text-sm uppercase">Cases</h2>
-      <ul className="text-xs text-[#0000ed] underline ">
+      <h2 className="header">Case Studies</h2>
+      <p className="body">
+        Projects that i've have been worked on in a full-time capacity.
+      </p>
+
+      <ul className="body text-[#0000ed] underline ">
         <li>
           <NavLink
             className={({ isActive }) =>

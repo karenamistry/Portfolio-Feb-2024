@@ -8,6 +8,7 @@
     "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.10",
     "@vercel/speed-insights": "^1.0.10",
+    "contentful": "^10.6.21",
     "cra-template": "1.2.0",
     "geist": "^1.2.2",
     "react": "^18.2.0",
