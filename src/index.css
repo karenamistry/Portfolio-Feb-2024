@@ -34,11 +34,11 @@
 /* Text Styles */
 
 .header {
-  @apply text-base uppercase;
+  @apply text-lg uppercase;
 }
 .subheader {
-  @apply text-xs uppercase;
+  @apply text-sm uppercase leading-relaxed;
 }
 .body {
-  @apply text-xs;
+  @apply text-sm leading-relaxed;
 }

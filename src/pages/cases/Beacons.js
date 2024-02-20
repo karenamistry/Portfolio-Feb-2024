@@ -13,10 +13,10 @@ function Beacons() {
 
     client
       .getEntries({
-        content_type: "beacons", // This ID is found in Contentful under "Content model"
+        content_type: "project", //
       })
       .then((response) => {
-        setCaseStudies(response.items); // response.items contains the case studies
+        setCaseStudies(response.items);
       })
       .catch(console.error);
   }, []);
@@ -27,15 +27,15 @@ function Beacons() {
       {caseStudies.map(({ fields }) => (
         <article className="flex flex-col space-y-4 mt-10" key={fields.title}>
           <div>
-            <h2 className="header">{fields.title}</h2>
-            <p className="body">{fields.description}</p>
+            <h2 className="subheader">{fields.title}</h2>
+            <p className="header">{fields.description}</p>
           </div>
           <div>
-            <p className="subheader">Timeline: {fields.timeline}</p>
-            <p className="subheader">Platform: {fields.platform}</p>
-            <p className="subheader">Team: {fields.team}</p>
+            <p className="body">Timeline: {fields.timeline}</p>
+            <p className="body">Platform: {fields.platform}</p>
+            <p className="body">Team: {fields.team}</p>
           </div>
-          <div>{fields.article}</div>
+          <div className="body">{fields.article}</div>
           {fields.images &&
             fields.images.map((image, index) => (
               <img

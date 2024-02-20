@@ -19,7 +19,7 @@ function EmailCopyButton() {
       <button
         title="k.mistry1898@gmail.com"
         onClick={copyEmailToClipboard}
-        className="uppercase text-xs"
+        className="subheader"
       >
         Copy Email
       </button>
